@@ -7,3 +7,5 @@ Learn GitHub
 High Priority : Learn Git branches
 
 Practice GitHub Push
+
+Practice Git Pull
