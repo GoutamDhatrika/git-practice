@@ -1,4 +1,4 @@
-Learn Git with real projects
+Learn Git deeply with real projects
 Practice Git 
 Build a project
 Learn Branches
