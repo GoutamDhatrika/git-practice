@@ -22,5 +22,20 @@ while True:
     elif choice == "3":
         break
 
+    elif choice == "4":
+        if not tasks:
+            print("No tasks to delete.")
+        else:
+            for number, task in enumerate(tasks, 1):
+                print(f"{number}. {task}")
+
+            number = int(input("Enter task number to delete: "))
+
+            if 1 <= number <= len(tasks):
+                removed = tasks.pop(number - 1)
+                print(f"Deleted: {removed}")
+            else:
+                print("Invalid task number.")
+
     else:
         print("Invalid choice.")
