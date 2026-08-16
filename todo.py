@@ -4,6 +4,8 @@ while True:
     print("\n1. Add task")
     print("2. View tasks")
     print("3. Exit")
+    print("4. Delete task")
+    print("5. Complete task")
 
     choice = input("Choose: ")
 
@@ -36,6 +38,18 @@ while True:
                 print(f"Deleted: {removed}")
             else:
                 print("Invalid task number.")
+        elif choice == "5":
+            if not tasks:
+                print("No tasks to complete.")
+            else:
+                for number, task in enumerate(tasks, 1):
+                    print(f"{number}. {task}")
 
+                number = int(input("Enter task number to complete: "))
+
+                if 1 <= number <= len(tasks):
+                    print(f"Completed: {tasks[number - 1]}")
+                else:
+                    print("Invalid task number.")
     else:
         print("Invalid choice.")
